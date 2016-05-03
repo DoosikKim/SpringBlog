@@ -41,14 +41,19 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-social-twitter')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-websocket')
-	runtime('com.h2database:h2')
+	compile('com.h2database:h2')
 	runtime('mysql:mysql-connector-java')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	//내가 추가한 라이브러리들
 	//compile fileTree(dir: 'libs', include: ['*.jar'])
 	compile 'jstl:jstl:1.2'
     compile 'org.apache.tiles:tiles-jsp:3.0.3'
     compile 'org.apache.tomcat.embed:tomcat-embed-jasper:8.0.20'
+    compile 'org.webjars.bower:bootstrap:3.3.6'
+    compile 'org.webjars.bower:jquery:3.0.0-beta1'
+    compile 'org.webjars.bower:origoni-startbootstrap-clean-blog:1.0.3'
+    compile 'org.webjars.bower:pen:0.2.2'
 }
 
 

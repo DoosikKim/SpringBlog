@@ -1,5 +1,7 @@
 package com.dskim.blog.domain.model.entity;
 
+import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,6 +13,8 @@ public class Hello {
 	int id;
 	
 	String name;
+	
+	Date date;
 
 	public int getId() {
 		return id;
@@ -27,6 +31,15 @@ public class Hello {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
 	
 	
 }
